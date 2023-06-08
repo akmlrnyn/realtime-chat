@@ -13,21 +13,23 @@
     <script>
         window.addEventListener('chatSelected', event => {
             if(window.innerWidth < 768) {
-                $('.chat_list_container').hide();
-                $('.chat_box_container').show();
+                $('.chat_list_container').hide()
+                $('.chat_box_container').show()
+            } else {
+                $('.return').hide()
             }
         })
 
         $(window).resize(function () {
             if(window.innerWidth > 768) {
-            $('.chat_list_container').show();
-            $('.chat_box_container').show();
+            $('.chat_list_container').show()
+            $('.chat_box_container').show()
             }
         })
 
         $(document).on('click', '.return', function () {
-            $('.chat_list_container').show();
-            $('.chat_box_container').hide();
+            $('.chat_list_container').show()
+            $('.chat_box_container').hide()
         })
     </script>
 
