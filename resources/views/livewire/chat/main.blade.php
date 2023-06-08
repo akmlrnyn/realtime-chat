@@ -1,3 +1,6 @@
+@section('content')
+    
+
 <div>
     {{-- Be like water. --}}
     <div class="chat_container">
@@ -34,3 +37,5 @@
     </script>
 
 </div>
+
+@endsection
